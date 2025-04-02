@@ -1,7 +1,7 @@
 function stringChop(str, size) {
   // your code here
 	let newarr=[];
-	for(let i=0; i<str.length; i++){
+	for(let i=0; i<str.length; i=i+size){
 		newarr.push(str.subString(i,i+size));
 	}
 	return newarr;
